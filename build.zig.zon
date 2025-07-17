@@ -1,0 +1,29 @@
+.{
+    .name = .libzip,
+    .version = "1.11.2",
+    .fingerprint = 0x76a50862f0cb7f59,
+    .minimum_zig_version = "0.14.1",
+    .dependencies = .{
+        .upstream = .{
+            .url = "git+https://github.com/winlibs/libzip.git?ref=libzip-1.11.2#e78545c66c5dcc51013445fda8372726c916d25d",
+            .hash = "N-V-__8AABcPXgCefxVc22OCflvY-XJlYQOQtWGJX3ZGucCm",
+        },
+        .zlib = .{
+            .url = "https://github.com/allyourcodebase/zlib/archive/refs/tags/1.3.1.tar.gz",
+            .hash = "zlib-1.3.1-AAAAACEMAAA0qyoSrfgBb_p25ItL4yRf_TBRk-26TYMF",
+        },
+        .bzip2 = .{
+            .url = "git+https://github.com/allyourcodebase/bzip2.git?ref=1.0.8#d7668d5ee5eb55489c35632ecf0b0107c7a77569",
+            .hash = "bzip2-1.0.8-m7CPz2QGAADdAt97rbHaz6ekIt864HgHs9rZ3fsYF5Fy",
+        },
+        .zstd = .{
+            .url = "git+https://github.com/allyourcodebase/zstd.git?ref=1.5.7#01327d49cbc56dc24c20a167bb0055d7fc23de84",
+            .hash = "zstd-1.5.7-KEItkJ8vAAC5_rRlKmLflYQ-eKXbAIQBWZNmmJtS18q0",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
